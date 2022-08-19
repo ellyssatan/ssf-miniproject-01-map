@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place ID Finder</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <div style="display: none">
+        <input
+          id="pac-input"
+          class="controls"
+          type="text"
+          placeholder="Enter a location"
+        />
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+    <span id="place-name" class="title"></span><br />
+    <strong>Place ID:</strong> <span id="place-id"></span><br />
+    <span id="place-address"></span>
+    </div>
+    
+</body>
+</html>

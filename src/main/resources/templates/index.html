@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+    <h1>welcome to mappy</h1>
+
+    <table>
+        <tr data-th-each="n : ${list}" data-th-each="d : ${detailsList}">
+            <td >
+                <p>
+                    Carpark Number: <span data-th-text="${n.carparkNo}"></span>
+                    Carpark Name: <span data-th-text="${d.name}"></span>
+
+                </p>
+                <p>
+                    <strong>Coordinates: </strong><span data-th-text="${n.coordinates}"></span>
+                </p>
+
+                <p>
+                    Lot Type: <span data-th-text="${n.lotType}"></span>
+                </p>
+
+                <p>
+                    Lots Available: <span data-th-text="${n.lotsAvailable}"></span>
+                </p>
+
+                <!-- <p>
+                    Tags: <span data-th-text="${n.tags}"></span>
+                </p>
+                       
+                <p>
+                    Published: <span data-th-text="${n.publishedOn}"></span>
+                    <a data-th-href="${n.url}">Link</a>
+                    <input type="checkbox" name="saveCheckbox" th:value="${n.id}"/>Save
+                </p> -->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
